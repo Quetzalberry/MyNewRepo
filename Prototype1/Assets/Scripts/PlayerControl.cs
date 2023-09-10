@@ -1,6 +1,7 @@
 ﻿/*
  * Denver Heneghan
  * Assignment 2, Prototype 1
+ * PlayerControl
  * This script controlled the movement of the player. It allowed the player to move along the x axis, and allowed it to be controlled by
  * the player through the arrow keys. It also dictated the speed of the player object, and allowed gravity to affct the player object.
  */
