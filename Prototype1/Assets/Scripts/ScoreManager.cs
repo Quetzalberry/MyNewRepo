@@ -1,4 +1,13 @@
-﻿using System.Collections;
+﻿/*
+ * Denver Heneghan
+ * Assignment 2, Prototype 1
+ * This script displays the text box when the player wins or looses. If the player wins, the text box shows the words "You Win!"
+ * If the player looses the text box displays the words "You Lose!" The text box also tells the player to press R to restart the game.
+ * Another thing this script does is allow the player to restart the game if they press R. Pressing R reloads the scene, and it
+ * resets the score back to zero.
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

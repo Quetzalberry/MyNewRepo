@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/*
+ * Denver Heneghan
+ * Assignment 2, Prototype 1
+ * This script is attached to a trigger zone. When the player touches a trigger zone,
+ * this script makes the score go up by one. It also makes sure the score goes up only once per trigger zone.
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

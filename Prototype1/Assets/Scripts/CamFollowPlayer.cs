@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/*
+ * Denver Heneghan
+ * Assignment 2, Prototype 1
+ * This script allowed the camera to follow the player object.
+ * It also made sure the camera was a bit behind the player object, and not directly on top of it.
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
