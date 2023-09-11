@@ -3,7 +3,7 @@
  * Assignment 2, Prototype 1
  * LoseOnFall
  * This script makes the game end when the player falls off the road and goes below -1 on the worlds y axis. 
- * It prompts the script ScoreManger text box to print "You Lose!"
+ * It confirms gameOver to be true, which prompts the script ScoreManger to print "You Lose!" 
  */
 
 using System.Collections;
