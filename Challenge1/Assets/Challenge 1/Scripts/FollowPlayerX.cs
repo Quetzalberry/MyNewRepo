@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿/*
+ * Denver Heneghan
+ * Assignment 2, Challenge 1
+ * FollowPlayerX
+ * This script starts the camera at a specific location, and rotates the camera, so it is looking at the plane from the side at a distance.
+ * The script also makes sure the camera follows the player object when it moves.
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

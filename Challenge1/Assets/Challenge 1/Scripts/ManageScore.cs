@@ -1,4 +1,13 @@
-﻿using System.Collections;
+﻿/*
+ * Denver Heneghan
+ * Assignment 2, Challenge 1
+ * ManageScore
+ * This script prints out Score: 0 at the top left hand side of the screen. When the score is 5 or greater, it prints out "You Win!"
+ * If the plane goes out of bounds, gameOver is confirmed to be true by the script LoseConditions, and prints out "You Lose!"
+ * This script also allows the player to reset the scene by pressing R. 
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

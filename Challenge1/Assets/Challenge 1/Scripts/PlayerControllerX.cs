@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿/*
+ * Denver Heneghan
+ * Assignment 2, Challenge 1
+ * PlayerControllerX
+ * This script causes the player object to move forward continuously without player input. It does allow the player to control if the
+ * plane goes up or down on the y axis while it moves forward.
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
