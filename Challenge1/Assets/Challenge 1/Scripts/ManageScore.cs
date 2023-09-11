@@ -45,11 +45,11 @@ public class ManageScore : MonoBehaviour
         {
             if (won)
             {
-                textbox.text = "You Win!\nPress R to Try Again!";
+                textbox.text = "You Win! Press R to Try Again!";
             }
             else
             {
-                textbox.text = "You Lose!\nPress R to Try Again!";
+                textbox.text = "You Lose! Press R to Try Again!";
             }
 
             if (Input.GetKeyDown(KeyCode.R))
