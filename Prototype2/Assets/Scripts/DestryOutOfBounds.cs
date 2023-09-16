@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class DestryOutOfBounds : MonoBehaviour
 {
-    public float topBound = 20;
-    public float bottomBound = -10;
+    public float topBound = 30;
+    public float bottomBound = -20;
 
     // Update is called once per frame
     void Update()
