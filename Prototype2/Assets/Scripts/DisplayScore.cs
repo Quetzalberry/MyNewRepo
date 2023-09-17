@@ -1,8 +1,9 @@
 ﻿/*
 * Denver Heneghan
-* (File Name)
+* DisplayScore
 * Prototype 2
-* (Describe, in general, the code contained.)
+* This code takes the text object and sets it so it will display Score: 0 at the start of each scene. Then when it receives an update from
+* DetectCollisions, it will change the text object to say Score: and whatever the new score is.
 */
 
 using System.Collections;
