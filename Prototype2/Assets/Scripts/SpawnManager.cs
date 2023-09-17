@@ -1,4 +1,16 @@
-﻿using System.Collections;
+﻿/*
+* Denver Heneghan
+* SpawnManager
+* Prototype 2
+* This script manages the spawning of prefabs. It also sets the boundaries for the player character and the other game objects.
+* This script also calls HealthSystem, so that the prefabs can be affected by the health system script.
+* Once the game is started, the script will start spawning prefabs of the animal objects added to the game. The code will spawn the a random
+* animal from the three choices at a random position on the top boundary. There is a three second interval before they start spawning, then
+* they are spawned with a random delay between each spawn. The delay can be anything from 0.8 to 3 seconds long. There is also code that
+* would allow the animals to be spawned when the player presses S, but this code went unused in the game.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

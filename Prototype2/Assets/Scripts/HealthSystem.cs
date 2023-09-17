@@ -1,4 +1,19 @@
-﻿//This script is based on https://www.youtube.com/watch?v=3uyolYVsiWc
+﻿/*
+* Denver Heneghan
+* HealthSystem
+* Prototype 2
+* This script is responsible for the health system. First it sets gameOver to false.  If health gets to zero or lower, gameOver is set to true.
+* If gameOver is true, it calls the gameOver text which tells the player they lose and how they can restart the scene.
+* This script also sets the health to the correct number of hearts. This gets rid of any extra hearts.
+* The script will display the full hearts at the start of each game. 
+* Once the player starts losing lives, the script starts showing empty hearts in place of the full hearts. 
+* The script also checks if the current amount of full hearts on screen is equal to the max amount of full hearts total.
+* Then the script creates TakeDamage and AddMaxHealth to be used by other scripts. 
+* Finally, the script lets the player restart the scene by pressing R.
+*/
+
+
+//This script is based on https://www.youtube.com/watch?v=3uyolYVsiWc
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

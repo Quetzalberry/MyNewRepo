@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿/*
+* Denver Heneghan
+* PlayerController
+* Prototype 2
+* This script allows the player character to move in game. The character's speed is set to 10, and the side boundaries 
+* are set to 14 and -14 along the x axis. The first input allows the player to move horizontally. The player character can be moved left or
+* right. Then the code cancels the players ability to move horizontally if they reach one of the side boundaries. The player character can
+* still be moved, but the code blocks it at a certain point.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

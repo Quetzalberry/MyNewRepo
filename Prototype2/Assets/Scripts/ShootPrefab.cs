@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿/*
+* Denver Heneghan
+* ShootPrefab
+* Prototype 2
+* This code creates the game object prefabToShoot. Then if the space bar is pressed, the game object is called and
+* the object the script is applied to will be shot forward. This script is applied to the food prefab.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
