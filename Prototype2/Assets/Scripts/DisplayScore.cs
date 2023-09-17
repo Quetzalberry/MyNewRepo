@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/*
+* Denver Heneghan
+* (File Name)
+* Prototype 2
+* (Describe, in general, the code contained.)
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
