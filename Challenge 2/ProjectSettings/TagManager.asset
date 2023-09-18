@@ -7,6 +7,7 @@ TagManager:
   - Dog
   - DisplayScoreText
   - HealthSystem
+  - WinText
   layers:
   - Default
   - TransparentFX

@@ -1,4 +1,13 @@
-﻿using System.Collections;
+﻿/*
+* Denver Heneghan
+* HealthSystem
+* Challenge 2
+* This script displays the heart images. It sets the amount of hearts displayed in the scene to the max amount. It sets gameOver to false.
+* When the player loses a life, a full heart is replaced with an empty heart. Once all five lives are lost, the script sets gameOver to true,
+* which activates the game over text. This script also allows the player to reset the scene if they press the R key.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -60,7 +69,6 @@ public class HealthSystem : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }
-
     }
 
     public void TakeDamage()

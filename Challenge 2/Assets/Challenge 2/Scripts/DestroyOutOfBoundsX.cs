@@ -5,7 +5,8 @@
 * I changed the left limit to a negative number so dogs would be able to make it to the other side of the screen before they disappeared.
 * I also changed it so transform.position.x had to be less than leftLimit to trigger Destroy(gameObject). This way the dogs are not destroyed
 * immediately. Finally, I changed transform.position.z to transform.position.y so the balls would be destroyed once they reached the bottom
-* boundary. The bottom boundary is on the y axis, not the z axis, so the balls were not getting destroyed.
+* boundary. The bottom boundary is on the y axis, not the z axis, so the balls were not getting destroyed. The script was also changed to
+* decrease the players health if a ball went past the bottom limit.
 */
 
 using System.Collections;

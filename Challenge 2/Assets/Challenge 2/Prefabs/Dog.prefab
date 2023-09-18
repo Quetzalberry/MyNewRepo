@@ -5134,7 +5134,7 @@ GameObject:
   - component: {fileID: 8241448879431697764}
   - component: {fileID: 8241448879431697766}
   - component: {fileID: 353968393887968187}
-  - component: {fileID: 114604207608957374}
+  - component: {fileID: 114124934829987966}
   m_Layer: 0
   m_Name: Dog
   m_TagString: Dog
@@ -5250,7 +5250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd56477307ae34a53ab47afc77a08392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114604207608957374
+--- !u!114 &114124934829987966
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

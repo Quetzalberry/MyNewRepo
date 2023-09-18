@@ -2,7 +2,11 @@
 * Denver Heneghan
 * SpawnManagerX
 * Challenge 2
-* 
+* The first change I made to the script was to get rid of the floats startDelay and spawnInterval. Then I added a random delay so the 
+* balls would spawn with a random amount of delay between them. The delay can be between three and five seconds. I also changed the script so it
+* would pick one of the three balls to spawn randomly each time it spawned a ball. Finally, I called the healthsystem script, and set the
+* random spawning to continue while gameOver was false. If gameOver became true, the HealthSystem script would single this script, and the 
+* spawning would stop.
 */
 
 using System.Collections;
