@@ -3,8 +3,8 @@
 * DisplayScore
 * Challenge 2
 * This script displays the text object with the words Score: 0 in it. When the score is changed, the script updates the text object so it says
-* the new score. This script also has the win condition. If the score reaches five, the script tells the player that they win. It also allows 
-* the player to restart the game by pressing R. 
+* the new score. This script also has the win condition. If the score reaches five or more, the script tells the player that they win.
+* It also allows the player to restart the game by pressing R.
 */
 
 using System.Collections;
