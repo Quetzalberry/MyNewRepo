@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+* Denver Heneghan
+* SpawnManagerX
+* Challenge 3
+* I changed the PrawnsObject to SpawnObjects so the command would execute correctly.
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,7 +19,7 @@ public class SpawnManagerX : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnObjects", spawnDelay, spawnInterval); //Added
+        InvokeRepeating("SpawnObjects", spawnDelay, spawnInterval);
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerControllerX>();
     }
 

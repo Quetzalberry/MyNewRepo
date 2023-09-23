@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/*
+* Denver Heneghan
+* MoveLeftX
+* Challenge 3
+* I changed a part of this script to make the objects move left when the game was not over instead of moving left
+* when the game was over.
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,7 +25,7 @@ public class MoveLeftX : MonoBehaviour
     void Update()
     {
         // If game is not over, move to the left
-        if (!playerControllerScript.gameOver) // Added
+        if (!playerControllerScript.gameOver)
         {
             transform.Translate(Vector3.left * speed * Time.deltaTime, Space.World);
         }
