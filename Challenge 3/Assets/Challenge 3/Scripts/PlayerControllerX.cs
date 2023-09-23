@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; //Added
+using UnityEngine.UI;//Added
 
 public class PlayerControllerX : MonoBehaviour
 {
@@ -21,7 +23,6 @@ public class PlayerControllerX : MonoBehaviour
     public AudioClip boingSound; //Added
 
     public bool isLowEnough = true; //Added
-
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +55,11 @@ public class PlayerControllerX : MonoBehaviour
         {
             isLowEnough = true;
         }
+
+        if (Input.GetKeyDown(KeyCode.R)) //Added
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
     private void OnCollisionEnter(Collision other)
@@ -84,5 +90,4 @@ public class PlayerControllerX : MonoBehaviour
         }
 
     }
-
 }
