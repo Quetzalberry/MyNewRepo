@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerControllerX : MonoBehaviour
 {
+    private Score addToScore; //Added
+
     public bool gameOver;
 
     public float floatForce;
@@ -16,6 +18,9 @@ public class PlayerControllerX : MonoBehaviour
     private AudioSource playerAudio;
     public AudioClip moneySound;
     public AudioClip explodeSound;
+    public AudioClip boingSound; //Added
+
+    public bool isLowEnough = true; //Added
 
 
     // Start is called before the first frame update
@@ -24,18 +29,30 @@ public class PlayerControllerX : MonoBehaviour
         Physics.gravity *= gravityModifier;
         playerAudio = GetComponent<AudioSource>();
 
+        playerRb = GetComponent<Rigidbody>(); //Added
+
         // Apply a small upward force at the start of the game
         playerRb.AddForce(Vector3.up * 5, ForceMode.Impulse);
 
+        addToScore = GameObject.FindGameObjectWithTag("ScoreText").GetComponent<Score>(); // Added
     }
 
     // Update is called once per frame
     void Update()
     {
         // While space is pressed and player is low enough, float up
-        if (Input.GetKey(KeyCode.Space) && !gameOver)
+        if (Input.GetKey(KeyCode.Space) && !gameOver && isLowEnough == true) //Added
         {
             playerRb.AddForce(Vector3.up * floatForce);
+        }
+
+        if (transform.position.y > 15) //Added
+        {
+            isLowEnough = false;
+        }
+        else
+        {
+            isLowEnough = true;
         }
     }
 
@@ -57,7 +74,13 @@ public class PlayerControllerX : MonoBehaviour
             fireworksParticle.Play();
             playerAudio.PlayOneShot(moneySound, 1.0f);
             Destroy(other.gameObject);
+            addToScore.score++;//Added
+        }
 
+        else if (other.gameObject.CompareTag("Ground"))//Added
+        {
+            playerRb.AddForce(Vector3.up * 15, ForceMode.Impulse);
+            playerAudio.PlayOneShot(boingSound, 1.0f);
         }
 
     }
