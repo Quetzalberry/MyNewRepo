@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+* Denver Heneghan
+* TriggerZoneAddScore
+* Prototype 3
+* 
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

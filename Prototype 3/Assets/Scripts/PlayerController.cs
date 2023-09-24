@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+* Denver Heneghan
+* PlayerController
+* Prototype 3
+* 
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
