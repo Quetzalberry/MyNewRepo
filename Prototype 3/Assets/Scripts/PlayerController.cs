@@ -2,7 +2,18 @@
 * Denver Heneghan
 * PlayerController
 * Prototype 3
-* 
+* This script controls the movement of the player character, as well as the audio, particle effects, and character
+* animation. The script gives the player a rigid body so it can interact with other objects like the ground.
+* It also makes the player character affected by gravity. If space is pressed, and the character is on the ground, 
+* then force is applied to the character to boost it into the air. Gravity will bring the character back down.
+* If the character is not on the ground, the space bar does nothing. If the player collides with an obstacle, 
+* then gameOver is set to true and the game is stopped. The script also animates the player character. 
+* It applies the running animation to the character when the game starts, and it applies the jumping animation when the player
+* hits the space bar and is touching the ground. The script also plays the death animation if the player collides with an 
+* obstacle. The explosion particle effects and crash sound effect are also applied if the character runs into an obstacle. 
+* Dirt particle effects are set when the player starts the game, but they are stopped when the character hits space bar and 
+* is in the air. Hitting the spacebar also triggers the jumping sound effect. Finally at the start of the game, an audio clip
+* is played. It is set to loop in unity, so it plays indefinitely.
 */
 using System.Collections;
 using System.Collections.Generic;

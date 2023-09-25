@@ -2,7 +2,10 @@
 * Denver Heneghan
 * RepeatBackground
 * Prototype 3
-* 
+* This script is used to repeat the background when it is being moved left. It cuts the background in half widthwise. This way
+* when the background is deleted when it moves to far left, only half of it will be deleted. The script sets the starting position
+* as a vector, and resets the background to this starting vector if it moves to far left. This means the background keeps being
+* deleted and rest, which gives it the impression that it goes on forever.
 */
 using System.Collections;
 using System.Collections.Generic;

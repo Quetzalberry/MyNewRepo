@@ -2,7 +2,13 @@
 * Denver Heneghan
 * UIManager
 * Prototype 3
-* 
+* This script keeps track of the score, and displays it on screen. The score is increased by one by the TriggerZoneAddScore 
+* script. This script also accesses the PlayerController script. This allows this script to access the gameOver command. 
+* If the gameOver command is set to true by the PlayerController script, and the score doesn't equal ten, then the text 
+* will display the words "You Lose!" If the score is at ten when the gameOver is set to true, then the text will say
+* "You Win!" This script also checks if the text box in unity has any text in it. If it doesn't the text box is set to display
+* "Score: 0" at the start of the game. Finally the script allows the player to press R to restart the scene if the player wins
+* or loses.
 */
 using System.Collections;
 using System.Collections.Generic;

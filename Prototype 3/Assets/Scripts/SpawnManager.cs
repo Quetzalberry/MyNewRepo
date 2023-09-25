@@ -2,7 +2,10 @@
 * Denver Heneghan
 * SpawnManager
 * Prototype 3
-* 
+* This script is used to spawn the obstacles in the game. It repeatedly spawns the prefabs of the obstacles 
+* at a specific vector every two seconds. It also gives a two second delay when the first obstacle is spawned. This script also
+* accesses the PlayerController script. If the object gameOver from the PlayerController script is set to true, then the 
+* script will stop spawning obstacles.
 */
 using System.Collections;
 using System.Collections.Generic;
@@ -32,11 +35,5 @@ public class SpawnManager : MonoBehaviour
         {
             Instantiate(obstaclePrefab, spawnPosition, obstaclePrefab.transform.rotation);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

@@ -2,7 +2,10 @@
 * Denver Heneghan
 * MoveLeft
 * Prototype 3
-* 
+* This script continuously moves the background and obstacle prefabs left at a speed of thirty. It also sets a boundary at 
+* negative fifteen on the x axis. It accesses the object gameOver from the PlayerContoller script. 
+* If gameOver is false, then the objects this script is attached to will be moved left. If those objects pass negative fifteen,
+* they are destroyed.
 */
 using System.Collections;
 using System.Collections.Generic;
