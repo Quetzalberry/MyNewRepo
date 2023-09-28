@@ -1,21 +1,44 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class DragAndDrop : MonoBehaviour
 {
-    private Vector3 click;
-    private Vector3 move;
+    private float startPosX;
+    private float startPosY;
+    private bool isClicked;
+
+    void Update()
+    {
+        if (isClicked == true)
+        {
+            Vector3 mousePos;
+            mousePos = Input.mousePosition;
+            mousePos = Camera.main.ScreenToViewportPoint(mousePos);
+
+            this.gameObject.transform.localPosition = new Vector3(mousePos.x - startPosX, mousePos.y - startPosY, 0);
+        }
+    }
 
     private void OnMouseDown()
     {
-        move = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, click.z));
+        if (Input.GetMouseButtonDown(0))
+        {
+            Vector3 mousePos;
+            mousePos = Input.mousePosition;
+            mousePos = Camera.main.ScreenToViewportPoint(mousePos);
+
+            startPosX = mousePos.x - this.transform.localPosition.x;
+            startPosY = mousePos.y - this.transform.localPosition.y;
+
+            isClicked = true;
+        }
     }
 
-    private void OnMouseDrag()
+    private void OnMouseUp()
     {
-        Vector3 pointOnScreen = new Vector3(Input.mousePosition.x, Input.mousePosition.y, click.z);
-        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(pointOnScreen) + move;
-        transform.position = mousePosition;
+        isClicked = false;
     }
 }
