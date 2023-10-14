@@ -4,21 +4,12 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 21300000
-    second: BackgroundProps_TileSheet_0
-  - first:
-      213: 21300002
-    second: BackgroundProps_TileSheet_1
-  - first:
-      213: 21300004
-    second: BackgroundProps_TileSheet_2
-  - first:
-      213: 21300006
     second: BackgroundClouds_SpriteSheet_0
   - first:
-      213: 21300008
+      213: 21300002
     second: BackgroundClouds_SpriteSheet_1
   - first:
-      213: 21300010
+      213: 21300004
     second: BackgroundClouds_SpriteSheet_2
   externalObjects: {}
   serializedVersion: 12
@@ -164,7 +155,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 344cbc4a06351244789ed5ec959fa1e9
-      internalID: 21300006
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -185,7 +176,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: fb85d1a3e5dc5284fbe5d814efb9f108
-      internalID: 21300008
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -206,7 +197,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 81f6cb60f077017448eff02715a91064
-      internalID: 21300010
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -222,9 +213,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BackgroundClouds_SpriteSheet_0: 21300006
-      BackgroundClouds_SpriteSheet_1: 21300008
-      BackgroundClouds_SpriteSheet_2: 21300010
+      BackgroundClouds_SpriteSheet_0: 21300000
+      BackgroundClouds_SpriteSheet_1: 21300002
+      BackgroundClouds_SpriteSheet_2: 21300004
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
