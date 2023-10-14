@@ -1,4 +1,13 @@
-﻿using System.Collections;
+﻿/*
+Denver Heneghan
+PlayerPlatformerController
+2DPixelProject
+In this code I added the line "animator.SetFloat("velocityY", velocity.y)". This line allows the animator in Unity to access the float velocityY. It also
+allows the animator to check the action of an object on the y axis. 
+*/
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
