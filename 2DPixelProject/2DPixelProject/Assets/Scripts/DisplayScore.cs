@@ -21,7 +21,7 @@ public class DisplayScore : MonoBehaviour
 
     void Start()
     {
-        scoreText.text = "Score: " + points.ToString();
+        scoreText.text = "Score: 0";
     }
 
     public void increasePoints()
