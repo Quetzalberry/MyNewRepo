@@ -14,10 +14,4 @@ public class Inventory : MonoBehaviour
 
         inventory = new List<InventoryItem>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

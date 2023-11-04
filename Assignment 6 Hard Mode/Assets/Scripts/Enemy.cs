@@ -22,10 +22,4 @@ public abstract class Enemy : MonoBehaviour, IDamageable
     protected abstract void Attack(int amount);
 
     public abstract void TakeDamage(int amount);
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
