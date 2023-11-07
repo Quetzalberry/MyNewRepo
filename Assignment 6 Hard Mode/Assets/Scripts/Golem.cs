@@ -6,7 +6,6 @@ public class Golem : Enemy
 {
     protected int damage;
 
-    // Start is called before the first frame update
     protected override void Awake()
     {
         base.Awake();
