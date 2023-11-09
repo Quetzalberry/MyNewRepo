@@ -1,4 +1,12 @@
-﻿using UnityEngine;
+﻿/*
+* Denver Heneghan
+* Inventory
+* Assignment 6 Easy
+* This script calls the information from the script InventoryItem. This script accesses the serialized field from the InventoryItem script.
+* It takes the information and puts it into a list.
+*/
+
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 

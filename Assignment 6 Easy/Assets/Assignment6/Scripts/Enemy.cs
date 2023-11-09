@@ -1,3 +1,10 @@
+/*
+* Denver Heneghan
+* Enemy
+* Assignment 6 Easy
+* (Describe, in general, the code contained.)
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,3 +1,10 @@
+/*
+* Denver Heneghan
+* Golem
+* Assignment 6 Easy
+* 
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
