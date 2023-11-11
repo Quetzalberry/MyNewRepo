@@ -2,7 +2,10 @@
 * Denver Heneghan
 * GameManager
 * Assignment 6 Easy
-* (Describe, in general, the code contained.)
+* This script initializes the score and handles the pause menu. If P is pressed, the pause menu would appear. If Pause was called, then timeScale is
+* set to 0. If Unpause is called, timeScale is set to 1. This allows the player to pause the game. This script also manages the loading and 
+* unloading of levels. This script allows Unity to call a scene, and load it. Then it allows Unity to unload the scene, and call another one. It
+* also lets an error appear if the level is unable to load.
 */
 
 using System.Collections;

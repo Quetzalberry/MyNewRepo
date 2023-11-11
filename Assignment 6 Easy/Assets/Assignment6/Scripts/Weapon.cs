@@ -2,7 +2,8 @@
 * Denver Heneghan
 * Weapon
 * Assignment 6 Easy
-* (Describe, in general, the code contained.)
+* This script initializes damageBound and EnemyHoldingWeapon. It gets the script enemy, and assigns EnemyHoldingWeapon to whatever object the
+* enemy script is attached to. This script also initializes the voids EnemyEatsWeapon and Recharge.
 */
 
 using System.Collections;

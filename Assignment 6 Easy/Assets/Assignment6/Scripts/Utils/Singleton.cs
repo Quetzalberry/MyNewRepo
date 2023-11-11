@@ -2,7 +2,8 @@
 * Denver Heneghan
 * Singleton
 * Assignment 6 Easy
-* (Describe, in general, the code contained.)
+* This script returns the instance variable. It also checks if the instance variable equals null. If an object is destroyed, the script sets 
+* instance as null so another object can be created. If it is not null, then the script tries to instantiate a second instance of a singleton class.
 */
 
 using System.Collections;
