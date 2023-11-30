@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/*
+ * Denver Heneghan
+ * EnemyX
+ * Assignment 7 Challenge 4
+ * To this script, I added code to make the enemies target the players goal, and head towards it.
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,7 +19,7 @@ public class EnemyX : MonoBehaviour
     void Start()
     {
         enemyRb = GetComponent<Rigidbody>();
-        playerGoal = GameObject.FindGameObjectWithTag("PlayerGoal"); // Added
+        playerGoal = GameObject.FindGameObjectWithTag("PlayerGoal");
     }
 
     // Update is called once per frame
@@ -21,7 +28,6 @@ public class EnemyX : MonoBehaviour
         // Set enemy direction towards player goal and move there
         Vector3 lookDirection = (playerGoal.transform.position - transform.position).normalized;
         enemyRb.AddForce(lookDirection * speed * Time.deltaTime);
-
     }
 
     private void OnCollisionEnter(Collision other)
@@ -37,5 +43,4 @@ public class EnemyX : MonoBehaviour
         }
 
     }
-
 }

@@ -1,6 +1,18 @@
-﻿using System.Collections;
+﻿/*
+ * Denver Heneghan
+ * PlayerControllerX
+ * Assignment 7 Challenge 4
+ * To this script I added code that finds the smoke particle effect and plays it when space is pressed. I also added code that made the 
+ * player characters have a boost of speed when space is pressed. I also added code that shows tutorial text at the beginning of the game, 
+ * and the player must press space to start the game. Finally, I added code that called a coroutine and made the enemies bounce away from the
+ * player not towards on collision.
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerControllerX : MonoBehaviour
 {
@@ -15,12 +27,16 @@ public class PlayerControllerX : MonoBehaviour
     private float normalStrength = 10; // how hard to hit enemy without powerup
     private float powerupStrength = 25; // how hard to hit enemy with powerup
 
-    public ParticleSystem smoke; //Added
+    public ParticleSystem smoke;
+
+    public Text tutorial; 
 
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
         focalPoint = GameObject.Find("Focal Point");
+
+        Time.timeScale = 0f;
     }
 
     void Update()
@@ -32,12 +48,17 @@ public class PlayerControllerX : MonoBehaviour
         // Set powerup indicator position to beneath player
         powerupIndicator.transform.position = transform.position + new Vector3(0, -0.6f, 0);
 
-        if (Input.GetKeyDown(KeyCode.Space)) //Added
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             playerRb.AddForce(focalPoint.transform.forward, ForceMode.Impulse);
-            smoke.Play(); // Added
+            smoke.Play();
         }
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            tutorial.enabled = false;
+            Time.timeScale = 1f;
+        }
     }
 
     // If Player collides with powerup, activate powerup
@@ -49,7 +70,7 @@ public class PlayerControllerX : MonoBehaviour
             hasPowerup = true;
             powerupIndicator.SetActive(true);
 
-            StartCoroutine(PowerupCooldown()); // Added
+            StartCoroutine(PowerupCooldown());
         }
     }
 
@@ -67,7 +88,7 @@ public class PlayerControllerX : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             Rigidbody enemyRigidbody = other.gameObject.GetComponent<Rigidbody>();
-            Vector3 awayFromPlayer = other.gameObject.transform.position - transform.position;  //Added
+            Vector3 awayFromPlayer = other.gameObject.transform.position - transform.position; 
            
             if (hasPowerup) // if have powerup hit enemy with powerup force
             {
