@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/*
+* Denver Heneghan
+* RotateCamera
+* Assignment 7 (Prototype 4)
+* This script allows the player to rotate the camera to the left or right with the left and right arrow keys.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
