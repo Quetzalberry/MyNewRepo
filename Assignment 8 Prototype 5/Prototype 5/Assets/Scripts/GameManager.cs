@@ -2,7 +2,12 @@
 * Denver Heneghan
 * GameManager
 * Assignment 8 Prototype 5
-* (Describe, in general, the code contained.)
+* This script manages the difficulty. It divides the speed by the difficulty assigned to each button so that the level spawns objects faster
+* depending on which button is pressed. This script also controls the restart button that is used to reload the scene when it is clicked. 
+* The restart button and the game over text are hidden at the beginning of the game, but are shown when the game is lost. The title screen 
+* hold the title text and the three difficulty buttons, and it is hidden once one of the buttons is clicked. This script also keeps track of 
+* the score. The score goes up or down by a specific number depending on which object is clicked. Finally this script controls were the objects
+* will spawn in the game by accessing the Target script and the code in it.
 */
 
 using System.Collections;

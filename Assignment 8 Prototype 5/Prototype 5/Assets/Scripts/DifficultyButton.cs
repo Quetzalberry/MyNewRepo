@@ -2,7 +2,8 @@
 * Denver Heneghan
 * DifficultyButton
 * Assignment 8 Prototype 5
-* (Describe, in general, the code contained.)
+* This code gets an int off of the three buttons on the title screen that can be clicked. The int is then used in GameManager to manage the 
+* difficulty of the game. It calls voids from GameManager to start the game, and control its difficulty. 
 */
 
 using System.Collections;

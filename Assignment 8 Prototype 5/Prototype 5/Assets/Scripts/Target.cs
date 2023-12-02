@@ -2,7 +2,10 @@
 * Denver Heneghan
 * Target
 * Assignment 8 Prototype 5
-* (Describe, in general, the code contained.)
+* This script spawns the objects at a random place, at a random speed, with a random amount of torque. This script also destroys those objects
+* when they are clicked, and also causes a particle effect to appear when the object is clicked. This script also activates the game over
+* void in GameManager if an object that is not tagged as "Bad" touches the trigger zone. Finally, this script initializes the rigidbodies
+* of the objects.
 */
 
 using System.Collections;
