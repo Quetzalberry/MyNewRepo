@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿/*
+* Denver Heneghan
+* TargetX
+* Assignment 8 Challenge 5
+* I changed this script so OnMouseEnter was OnMouseDown so the player has to click the object to execute the code instead of just touching 
+* it with their mouse.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -23,19 +31,17 @@ public class TargetX : MonoBehaviour
 
         transform.position = RandomSpawnPosition(); 
         StartCoroutine(RemoveObjectRoutine()); // begin timer before target leaves screen
-
     }
 
     // When target is clicked, destroy it, update score, and generate explosion
-    private void OnMouseEnter()
+    private void OnMouseDown()
     {
         if (gameManagerX.isGameActive)
         {
             Destroy(gameObject);
             gameManagerX.UpdateScore(pointValue);
             Explode();
-        }
-               
+        }        
     }
 
     // Generate a random spawn position based on a random index from 0 to 3

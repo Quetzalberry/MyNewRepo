@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿/*
+* Denver Heneghan
+* DifficultyButtonX
+* Assignment 8 Challenge 5
+* I changed this script so it gets the difficulty int from the GameManagerX script. The number it gets from the GameManager script determines
+* how fast objects disappear. 
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -23,9 +31,6 @@ public class DifficultyButtonX : MonoBehaviour
     void SetDifficulty()
     {
         Debug.Log(button.gameObject.name + " was clicked");
-        gameManagerX.StartGame();
+        gameManagerX.StartGame(difficulty);
     }
-
-
-
 }
