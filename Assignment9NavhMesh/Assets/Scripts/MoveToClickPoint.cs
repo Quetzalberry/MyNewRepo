@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿/*
+* Denver Heneghan
+* MoveToClickPoint
+* Assignment9NavMesh
+* This script allows the player to move the player object around. On clicking the left mouse, the player object moves towards the location
+* the mouse clicked. It also initializes the NavMeshAgent component.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;

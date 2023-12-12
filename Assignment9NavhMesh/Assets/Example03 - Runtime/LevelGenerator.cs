@@ -1,3 +1,10 @@
+/*
+* Denver Heneghan
+* LevelGenerator
+* Assignment9NavMesh
+* To this script, I added a NavMeshSurface that built a NavMesh into the level when it generated a random level.
+*/
+
 using UnityEngine;
 using UnityEngine.AI;
 

@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿/*
+* Denver Heneghan
+* PlayerController
+* Assignment9NavMesh
+* This script causes the player object to move to the location that the player has clicked. It also allows the player to use the script
+* ThirdPersonCharacter which allows the player object to be animated.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -35,7 +43,11 @@ public class PlayerController : MonoBehaviour
 
         if (agent.remainingDistance > agent.stoppingDistance)
         {
-
+            character.Move(agent.desiredVelocity, false, false);
+        }
+        else
+        {
+            character.Move(Vector3.zero, false, false);
         }
     }
 }
